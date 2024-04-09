@@ -1,0 +1,60 @@
+{
+    "expression": "What is 3 plus 5?"
+}
+{
+    "expression": "What is 1 plus plus 2?"
+}
+{
+    "expression": "What is 10 minus 2?"
+}
+{
+    "expression": "What is 4 multiplied by 3?"
+}
+{
+    "expression": "What is 10 divided by 2?"
+}
+{
+    "expression": "What is 2 plus 3 multiplied by 4?"
+}
+{
+    "expression": "What is 8 divided by 0?"
+}
+{
+    "expression": "How are you?"
+}
+{
+    "expression": "What is 2 divided 3?"
+}
+{
+    "expression": "What is ?"
+}
+{
+    "expression": "What is"
+}
+{
+    "expression": "What is 1 plus?"
+}
+{
+    "expression": "whaT Is 1 divided by 3?"
+}
+{
+    "expression": "What is 5 minus 10?"
+}
+{
+    "expression": "What is 1000 multiplied by 1000?"
+}
+{
+    "expression": "What is 2 plus 3 plus 4 + 5?"
+}
+{
+    "expression": "What is 2 multiplied by 3 divided by 0?"
+}
+{
+    "expression": "What is three plus 5?"
+}
+{
+    "expression": "Who is he"
+}
+{
+    "expression": "What is 5 plus 10??"
+}
