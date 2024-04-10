@@ -1,1 +1,15 @@
+This application provides information about given math expressions. It has 3 communication endpoints:
+ - `/validate` - returns in JSON format whether an expression is valid or not
+ - `/evaluate` - returns the result of an expression, if valid, or error, if not
+ - `/errors` - returns all invalid expression at different endpoints and their frequency
 
+1. Start the application with `go run webApi.go`
+2. Options to communicate with the API:
+  2.1. In the same process, enter:
+       - `<endpointName> <jsonfileName>` for endpoints "/validate" and "/evaluate"
+       - `<endpointName>` for endpoint "/errors"
+  2.2. In a different process, execute:
+       - `curl localhost:8080<endpointName> --header "Content-Type: application/json" -d @<jsonfileName>` for endpoints "/validate" and "/evaluate"
+       - `curl localhost:8080<endpointName>` for endpoint "/errors"
+
+The input JSON file shall follow the following format `{ "expression": "example math expression" }`.
