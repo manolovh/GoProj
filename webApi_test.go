@@ -68,6 +68,16 @@ func TestValidateExpression(t *testing.T) {
 	valid, reason = validateExpression(invalidExpr)
 	assert.False(t, valid, "Invalid expression passed the validation")
 	assert.NotEqual(t, reason, "", expectedAReason)
+
+	invalidExpr = "what is 5 multiplied plus 3?"
+	valid, reason = validateExpression(invalidExpr)
+	assert.False(t, valid, "Invalid expression passed the validation")
+	assert.NotEqual(t, reason, "", expectedAReason)
+
+	invalidExpr = "what is 5 plus 3?abc"
+	valid, reason = validateExpression(invalidExpr)
+	assert.False(t, valid, "Invalid expression passed the validation")
+	assert.NotEqual(t, reason, "", expectedAReason)
 }
 
 func TestEvaluateExpression(t *testing.T) {
@@ -127,7 +137,7 @@ func TestValidateHandler(t *testing.T) {
 	router.ServeHTTP(res, req)
 
 	var errorResp ValidationResponse
-	err = json.NewDecoder(res.Body).Decode(&errorResp)
+	_ = json.NewDecoder(res.Body).Decode(&errorResp)
 	assert.Equal(t, errorResp.Reason, InvalidJSONError, "Expected message: %s, but got message: %s", InvalidJSONError, errorResp.Reason)
 	assert.Equal(t, res.Code, http.StatusBadRequest, "Expected Status 400, but got %d", res.Code)
 }
