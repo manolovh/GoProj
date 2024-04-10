@@ -1,6 +1,6 @@
 This application provides information about given math expressions. It has 3 communication endpoints:
- - `/validate` - returns in JSON format whether an expression is valid or not
- - `/evaluate` - returns the result of an expression, if valid, or error, if not
+ - `/validate` - returns JSON format whether an expression is valid or not
+ - `/evaluate` - returns JSON forma with the result of an expression, if valid, or error, if not
  - `/errors` - returns all invalid expression at different endpoints and their frequency
 
 1. Start the application with `go run webApi.go`
