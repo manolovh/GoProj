@@ -13,3 +13,5 @@ This application provides information about given math expressions. It has 3 com
        - `curl localhost:8080<endpointName>` for endpoint "/errors"
 
 The input JSON file shall follow the following format `{ "expression": "example math expression" }`.
+
+Run the webApi_test.go unit tests by executing `go test -v webApi_test.go webApi.go`.
